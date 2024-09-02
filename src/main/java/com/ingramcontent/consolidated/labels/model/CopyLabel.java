@@ -6,12 +6,117 @@ package com.ingramcontent.consolidated.labels.model;
 
 public class CopyLabel implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CopyLabel() {
-    }
+	private java.lang.Integer copyId;
+	private java.lang.Integer sequence;
+	private java.lang.Integer labelSetId;
+	private java.lang.Integer status;
+	private boolean doNotPrint;
+	private java.lang.String isbn;
+	private java.lang.String createdByUserId;
+	private java.lang.String createDate;
+	private java.lang.String updatedByUserId;
+	private java.lang.String updateDate;
 
+	public CopyLabel() {
+	}
 
+	public java.lang.Integer getCopyId() {
+		return this.copyId;
+	}
 
+	public void setCopyId(java.lang.Integer copyId) {
+		this.copyId = copyId;
+	}
+
+	public java.lang.Integer getSequence() {
+		return this.sequence;
+	}
+
+	public void setSequence(java.lang.Integer sequence) {
+		this.sequence = sequence;
+	}
+
+	public java.lang.Integer getLabelSetId() {
+		return this.labelSetId;
+	}
+
+	public void setLabelSetId(java.lang.Integer labelSetId) {
+		this.labelSetId = labelSetId;
+	}
+
+	public java.lang.Integer getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.Integer status) {
+		this.status = status;
+	}
+
+	public boolean isDoNotPrint() {
+		return this.doNotPrint;
+	}
+
+	public void setDoNotPrint(boolean doNotPrint) {
+		this.doNotPrint = doNotPrint;
+	}
+
+	public java.lang.String getIsbn() {
+		return this.isbn;
+	}
+
+	public void setIsbn(java.lang.String isbn) {
+		this.isbn = isbn;
+	}
+
+	public java.lang.String getCreatedByUserId() {
+		return this.createdByUserId;
+	}
+
+	public void setCreatedByUserId(java.lang.String createdByUserId) {
+		this.createdByUserId = createdByUserId;
+	}
+
+	public java.lang.String getCreateDate() {
+		return this.createDate;
+	}
+
+	public void setCreateDate(java.lang.String createDate) {
+		this.createDate = createDate;
+	}
+
+	public java.lang.String getUpdatedByUserId() {
+		return this.updatedByUserId;
+	}
+
+	public void setUpdatedByUserId(java.lang.String updatedByUserId) {
+		this.updatedByUserId = updatedByUserId;
+	}
+
+	public java.lang.String getUpdateDate() {
+		return this.updateDate;
+	}
+
+	public void setUpdateDate(java.lang.String updateDate) {
+		this.updateDate = updateDate;
+	}
+
+	public CopyLabel(java.lang.Integer copyId, java.lang.Integer sequence,
+			java.lang.Integer labelSetId, java.lang.Integer status,
+			boolean doNotPrint, java.lang.String isbn,
+			java.lang.String createdByUserId, java.lang.String createDate,
+			java.lang.String updatedByUserId, java.lang.String updateDate) {
+		this.copyId = copyId;
+		this.sequence = sequence;
+		this.labelSetId = labelSetId;
+		this.status = status;
+		this.doNotPrint = doNotPrint;
+		this.isbn = isbn;
+		this.createdByUserId = createdByUserId;
+		this.createDate = createDate;
+		this.updatedByUserId = updatedByUserId;
+		this.updateDate = updateDate;
+	}
 
 }
