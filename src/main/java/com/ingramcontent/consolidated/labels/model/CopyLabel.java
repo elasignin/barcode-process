@@ -19,6 +19,10 @@ public class CopyLabel implements java.io.Serializable {
 	private java.lang.String updatedByUserId;
 	private java.lang.String updateDate;
 
+	private java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines;
+
+	private java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata;
+
 	public CopyLabel() {
 	}
 
@@ -102,11 +106,37 @@ public class CopyLabel implements java.io.Serializable {
 		this.updateDate = updateDate;
 	}
 
-	public CopyLabel(java.lang.Integer copyId, java.lang.Integer sequence,
-			java.lang.Integer labelSetId, java.lang.Integer status,
-			boolean doNotPrint, java.lang.String isbn,
-			java.lang.String createdByUserId, java.lang.String createDate,
-			java.lang.String updatedByUserId, java.lang.String updateDate) {
+	public java.util.List<com.ingramcontent.consolidated.labels.model.Line> getLines() {
+		return this.lines;
+	}
+
+	public void setLines(
+			java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines) {
+		this.lines = lines;
+	}
+
+	public java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> getMetadata() {
+		return this.metadata;
+	}
+
+	public void setMetadata(
+			java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata) {
+		this.metadata = metadata;
+	}
+
+	public CopyLabel(
+			java.lang.Integer copyId,
+			java.lang.Integer sequence,
+			java.lang.Integer labelSetId,
+			java.lang.Integer status,
+			boolean doNotPrint,
+			java.lang.String isbn,
+			java.lang.String createdByUserId,
+			java.lang.String createDate,
+			java.lang.String updatedByUserId,
+			java.lang.String updateDate,
+			java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines,
+			java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata) {
 		this.copyId = copyId;
 		this.sequence = sequence;
 		this.labelSetId = labelSetId;
@@ -117,6 +147,8 @@ public class CopyLabel implements java.io.Serializable {
 		this.createDate = createDate;
 		this.updatedByUserId = updatedByUserId;
 		this.updateDate = updateDate;
+		this.lines = lines;
+		this.metadata = metadata;
 	}
 
 }
