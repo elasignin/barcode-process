@@ -11,7 +11,4 @@ public class handler implements java.io.Serializable {
     public handler() {
     }
 
-
-
-
 }
