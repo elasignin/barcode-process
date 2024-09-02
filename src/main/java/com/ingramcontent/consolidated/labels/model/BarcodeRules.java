@@ -6,12 +6,46 @@ package com.ingramcontent.consolidated.labels.model;
 
 public class BarcodeRules implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BarcodeRules() {
-    }
+	private boolean usesCustomerSuppliedBarcode;
+	private boolean usesBookmarcSuppliedBarcode;
+	private int length;
 
+	public BarcodeRules() {
+	}
 
+	public boolean isUsesCustomerSuppliedBarcode() {
+		return this.usesCustomerSuppliedBarcode;
+	}
 
+	public void setUsesCustomerSuppliedBarcode(
+			boolean usesCustomerSuppliedBarcode) {
+		this.usesCustomerSuppliedBarcode = usesCustomerSuppliedBarcode;
+	}
+
+	public boolean isUsesBookmarcSuppliedBarcode() {
+		return this.usesBookmarcSuppliedBarcode;
+	}
+
+	public void setUsesBookmarcSuppliedBarcode(
+			boolean usesBookmarcSuppliedBarcode) {
+		this.usesBookmarcSuppliedBarcode = usesBookmarcSuppliedBarcode;
+	}
+
+	public int getLength() {
+		return this.length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public BarcodeRules(boolean usesCustomerSuppliedBarcode,
+			boolean usesBookmarcSuppliedBarcode, int length) {
+		this.usesCustomerSuppliedBarcode = usesCustomerSuppliedBarcode;
+		this.usesBookmarcSuppliedBarcode = usesBookmarcSuppliedBarcode;
+		this.length = length;
+	}
 
 }
