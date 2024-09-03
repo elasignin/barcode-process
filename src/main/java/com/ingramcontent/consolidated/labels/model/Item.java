@@ -6,12 +6,23 @@ package com.ingramcontent.consolidated.labels.model;
 
 public class Item implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Item() {
-    }
+	private java.lang.String statusID;
 
+	public Item() {
+	}
 
+	public java.lang.String getStatusID() {
+		return this.statusID;
+	}
 
+	public void setStatusID(java.lang.String statusID) {
+		this.statusID = statusID;
+	}
+
+	public Item(java.lang.String statusID) {
+		this.statusID = statusID;
+	}
 
 }
