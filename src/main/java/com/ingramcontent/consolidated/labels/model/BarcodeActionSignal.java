@@ -6,12 +6,36 @@ package com.ingramcontent.consolidated.labels.model;
 
 public class BarcodeActionSignal implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BarcodeActionSignal() {
-    }
+	private java.lang.String topic;
+	private com.ingramcontent.consolidated.labels.model.ToteInformationSignal toteInformation;
 
+	public BarcodeActionSignal() {
+	}
 
+	public java.lang.String getTopic() {
+		return this.topic;
+	}
 
+	public void setTopic(java.lang.String topic) {
+		this.topic = topic;
+	}
+
+	public com.ingramcontent.consolidated.labels.model.ToteInformationSignal getToteInformation() {
+		return this.toteInformation;
+	}
+
+	public void setToteInformation(
+			com.ingramcontent.consolidated.labels.model.ToteInformationSignal toteInformation) {
+		this.toteInformation = toteInformation;
+	}
+
+	public BarcodeActionSignal(
+			java.lang.String topic,
+			com.ingramcontent.consolidated.labels.model.ToteInformationSignal toteInformation) {
+		this.topic = topic;
+		this.toteInformation = toteInformation;
+	}
 
 }
