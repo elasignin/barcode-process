@@ -14,12 +14,9 @@ public class CopyLabelSignal implements java.io.Serializable {
 	private java.lang.Integer status;
 	private boolean doNotPrint;
 	private java.lang.String isbn;
-	private java.lang.String createdByUserId;
-	private java.lang.String createDate;
-	private java.lang.String updatedByUserId;
-	private java.lang.String updateDate;
-
 	private java.lang.Integer itemId;
+
+	private com.ingramcontent.consolidated.labels.model.MetadataSignal metadata;
 
 	public CopyLabelSignal() {
 	}
@@ -72,38 +69,6 @@ public class CopyLabelSignal implements java.io.Serializable {
 		this.isbn = isbn;
 	}
 
-	public java.lang.String getCreatedByUserId() {
-		return this.createdByUserId;
-	}
-
-	public void setCreatedByUserId(java.lang.String createdByUserId) {
-		this.createdByUserId = createdByUserId;
-	}
-
-	public java.lang.String getCreateDate() {
-		return this.createDate;
-	}
-
-	public void setCreateDate(java.lang.String createDate) {
-		this.createDate = createDate;
-	}
-
-	public java.lang.String getUpdatedByUserId() {
-		return this.updatedByUserId;
-	}
-
-	public void setUpdatedByUserId(java.lang.String updatedByUserId) {
-		this.updatedByUserId = updatedByUserId;
-	}
-
-	public java.lang.String getUpdateDate() {
-		return this.updateDate;
-	}
-
-	public void setUpdateDate(java.lang.String updateDate) {
-		this.updateDate = updateDate;
-	}
-
 	public java.lang.Integer getItemId() {
 		return this.itemId;
 	}
@@ -112,23 +77,28 @@ public class CopyLabelSignal implements java.io.Serializable {
 		this.itemId = itemId;
 	}
 
+	public com.ingramcontent.consolidated.labels.model.MetadataSignal getMetadata() {
+		return this.metadata;
+	}
+
+	public void setMetadata(
+			com.ingramcontent.consolidated.labels.model.MetadataSignal metadata) {
+		this.metadata = metadata;
+	}
+
 	public CopyLabelSignal(java.lang.Integer copyId,
 			java.lang.Integer sequence, java.lang.Integer labelSetId,
 			java.lang.Integer status, boolean doNotPrint,
-			java.lang.String isbn, java.lang.String createdByUserId,
-			java.lang.String createDate, java.lang.String updatedByUserId,
-			java.lang.String updateDate, java.lang.Integer itemId) {
+			java.lang.String isbn, java.lang.Integer itemId,
+			com.ingramcontent.consolidated.labels.model.MetadataSignal metadata) {
 		this.copyId = copyId;
 		this.sequence = sequence;
 		this.labelSetId = labelSetId;
 		this.status = status;
 		this.doNotPrint = doNotPrint;
 		this.isbn = isbn;
-		this.createdByUserId = createdByUserId;
-		this.createDate = createDate;
-		this.updatedByUserId = updatedByUserId;
-		this.updateDate = updateDate;
 		this.itemId = itemId;
+		this.metadata = metadata;
 	}
 
 }
