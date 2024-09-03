@@ -10,6 +10,10 @@ public class Item implements java.io.Serializable {
 
 	private java.lang.String statusID;
 
+	private java.lang.Integer itemId;
+
+	private java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels;
+
 	public Item() {
 	}
 
@@ -21,8 +25,30 @@ public class Item implements java.io.Serializable {
 		this.statusID = statusID;
 	}
 
-	public Item(java.lang.String statusID) {
+	public java.lang.Integer getItemId() {
+		return this.itemId;
+	}
+
+	public void setItemId(java.lang.Integer itemId) {
+		this.itemId = itemId;
+	}
+
+	public java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> getCopyLabels() {
+		return this.copyLabels;
+	}
+
+	public void setCopyLabels(
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
+		this.copyLabels = copyLabels;
+	}
+
+	public Item(
+			java.lang.String statusID,
+			java.lang.Integer itemId,
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
 		this.statusID = statusID;
+		this.itemId = itemId;
+		this.copyLabels = copyLabels;
 	}
 
 }
