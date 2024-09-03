@@ -16,9 +16,9 @@ public class ToteInformationSignal implements java.io.Serializable {
 	private java.lang.String toteBarcode;
 	private int status;
 	private com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules;
-	private com.ingramcontent.consolidated.labels.model.Item items;
-
 	private java.lang.String barcodeShip;
+
+	private java.util.List<com.ingramcontent.consolidated.labels.model.Item> items;
 
 	public ToteInformationSignal() {
 	}
@@ -88,20 +88,21 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.barcodeRules = barcodeRules;
 	}
 
-	public com.ingramcontent.consolidated.labels.model.Item getItems() {
-		return this.items;
-	}
-
-	public void setItems(com.ingramcontent.consolidated.labels.model.Item items) {
-		this.items = items;
-	}
-
 	public java.lang.String getBarcodeShip() {
 		return this.barcodeShip;
 	}
 
 	public void setBarcodeShip(java.lang.String barcodeShip) {
 		this.barcodeShip = barcodeShip;
+	}
+
+	public java.util.List<com.ingramcontent.consolidated.labels.model.Item> getItems() {
+		return this.items;
+	}
+
+	public void setItems(
+			java.util.List<com.ingramcontent.consolidated.labels.model.Item> items) {
+		this.items = items;
 	}
 
 	public ToteInformationSignal(
@@ -113,8 +114,8 @@ public class ToteInformationSignal implements java.io.Serializable {
 			java.lang.String toteBarcode,
 			int status,
 			com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules,
-			com.ingramcontent.consolidated.labels.model.Item items,
-			java.lang.String barcodeShip) {
+			java.lang.String barcodeShip,
+			java.util.List<com.ingramcontent.consolidated.labels.model.Item> items) {
 		this.oeNumber = oeNumber;
 		this.plRunNumber = plRunNumber;
 		this.shipTo = shipTo;
@@ -123,8 +124,8 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.toteBarcode = toteBarcode;
 		this.status = status;
 		this.barcodeRules = barcodeRules;
-		this.items = items;
 		this.barcodeShip = barcodeShip;
+		this.items = items;
 	}
 
 }
