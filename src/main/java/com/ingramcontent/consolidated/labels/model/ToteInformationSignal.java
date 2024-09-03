@@ -21,7 +21,7 @@ public class ToteInformationSignal implements java.io.Serializable {
 	private java.lang.String createDate;
 	private java.lang.String updatedByUserId;
 	private java.lang.String updateDate;
-	private com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels;
+	private com.ingramcontent.consolidated.labels.model.Item items;
 
 	public ToteInformationSignal() {
 	}
@@ -131,13 +131,12 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.updateDate = updateDate;
 	}
 
-	public com.ingramcontent.consolidated.labels.model.CopyLabel getCopyLabels() {
-		return this.copyLabels;
+	public com.ingramcontent.consolidated.labels.model.Item getItems() {
+		return this.items;
 	}
 
-	public void setCopyLabels(
-			com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels) {
-		this.copyLabels = copyLabels;
+	public void setItems(com.ingramcontent.consolidated.labels.model.Item items) {
+		this.items = items;
 	}
 
 	public ToteInformationSignal(
@@ -152,7 +151,7 @@ public class ToteInformationSignal implements java.io.Serializable {
 			com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules,
 			java.lang.String createdByUserId, java.lang.String createDate,
 			java.lang.String updatedByUserId, java.lang.String updateDate,
-			com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels) {
+			com.ingramcontent.consolidated.labels.model.Item items) {
 		this.oeNumber = oeNumber;
 		this.plRunNumber = plRunNumber;
 		this.shipTo = shipTo;
@@ -166,7 +165,7 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.createDate = createDate;
 		this.updatedByUserId = updatedByUserId;
 		this.updateDate = updateDate;
-		this.copyLabels = copyLabels;
+		this.items = items;
 	}
 
 }
