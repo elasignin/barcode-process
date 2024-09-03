@@ -14,14 +14,11 @@ public class ToteInformationSignal implements java.io.Serializable {
 	private java.lang.String parentShip;
 	private int toteId;
 	private java.lang.String toteBarcode;
-	private int copyCount;
 	private int status;
 	private com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules;
-	private java.lang.String createdByUserId;
-	private java.lang.String createDate;
-	private java.lang.String updatedByUserId;
-	private java.lang.String updateDate;
 	private com.ingramcontent.consolidated.labels.model.Item items;
+
+	private java.lang.String barcodeShip;
 
 	public ToteInformationSignal() {
 	}
@@ -74,14 +71,6 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.toteBarcode = toteBarcode;
 	}
 
-	public int getCopyCount() {
-		return this.copyCount;
-	}
-
-	public void setCopyCount(int copyCount) {
-		this.copyCount = copyCount;
-	}
-
 	public int getStatus() {
 		return this.status;
 	}
@@ -99,44 +88,20 @@ public class ToteInformationSignal implements java.io.Serializable {
 		this.barcodeRules = barcodeRules;
 	}
 
-	public java.lang.String getCreatedByUserId() {
-		return this.createdByUserId;
-	}
-
-	public void setCreatedByUserId(java.lang.String createdByUserId) {
-		this.createdByUserId = createdByUserId;
-	}
-
-	public java.lang.String getCreateDate() {
-		return this.createDate;
-	}
-
-	public void setCreateDate(java.lang.String createDate) {
-		this.createDate = createDate;
-	}
-
-	public java.lang.String getUpdatedByUserId() {
-		return this.updatedByUserId;
-	}
-
-	public void setUpdatedByUserId(java.lang.String updatedByUserId) {
-		this.updatedByUserId = updatedByUserId;
-	}
-
-	public java.lang.String getUpdateDate() {
-		return this.updateDate;
-	}
-
-	public void setUpdateDate(java.lang.String updateDate) {
-		this.updateDate = updateDate;
-	}
-
 	public com.ingramcontent.consolidated.labels.model.Item getItems() {
 		return this.items;
 	}
 
 	public void setItems(com.ingramcontent.consolidated.labels.model.Item items) {
 		this.items = items;
+	}
+
+	public java.lang.String getBarcodeShip() {
+		return this.barcodeShip;
+	}
+
+	public void setBarcodeShip(java.lang.String barcodeShip) {
+		this.barcodeShip = barcodeShip;
 	}
 
 	public ToteInformationSignal(
@@ -146,26 +111,20 @@ public class ToteInformationSignal implements java.io.Serializable {
 			java.lang.String parentShip,
 			int toteId,
 			java.lang.String toteBarcode,
-			int copyCount,
 			int status,
 			com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules,
-			java.lang.String createdByUserId, java.lang.String createDate,
-			java.lang.String updatedByUserId, java.lang.String updateDate,
-			com.ingramcontent.consolidated.labels.model.Item items) {
+			com.ingramcontent.consolidated.labels.model.Item items,
+			java.lang.String barcodeShip) {
 		this.oeNumber = oeNumber;
 		this.plRunNumber = plRunNumber;
 		this.shipTo = shipTo;
 		this.parentShip = parentShip;
 		this.toteId = toteId;
 		this.toteBarcode = toteBarcode;
-		this.copyCount = copyCount;
 		this.status = status;
 		this.barcodeRules = barcodeRules;
-		this.createdByUserId = createdByUserId;
-		this.createDate = createDate;
-		this.updatedByUserId = updatedByUserId;
-		this.updateDate = updateDate;
 		this.items = items;
+		this.barcodeShip = barcodeShip;
 	}
 
 }
