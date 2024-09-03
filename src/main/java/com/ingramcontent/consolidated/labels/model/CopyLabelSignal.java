@@ -19,9 +19,7 @@ public class CopyLabelSignal implements java.io.Serializable {
 	private java.lang.String updatedByUserId;
 	private java.lang.String updateDate;
 
-	private java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines;
-
-	private java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata;
+	private java.lang.Integer itemId;
 
 	public CopyLabelSignal() {
 	}
@@ -106,37 +104,20 @@ public class CopyLabelSignal implements java.io.Serializable {
 		this.updateDate = updateDate;
 	}
 
-	public java.util.List<com.ingramcontent.consolidated.labels.model.Line> getLines() {
-		return this.lines;
+	public java.lang.Integer getItemId() {
+		return this.itemId;
 	}
 
-	public void setLines(
-			java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines) {
-		this.lines = lines;
+	public void setItemId(java.lang.Integer itemId) {
+		this.itemId = itemId;
 	}
 
-	public java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> getMetadata() {
-		return this.metadata;
-	}
-
-	public void setMetadata(
-			java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata) {
-		this.metadata = metadata;
-	}
-
-	public CopyLabelSignal(
-			java.lang.Integer copyId,
-			java.lang.Integer sequence,
-			java.lang.Integer labelSetId,
-			java.lang.Integer status,
-			boolean doNotPrint,
-			java.lang.String isbn,
-			java.lang.String createdByUserId,
-			java.lang.String createDate,
-			java.lang.String updatedByUserId,
-			java.lang.String updateDate,
-			java.util.List<com.ingramcontent.consolidated.labels.model.Line> lines,
-			java.util.List<com.ingramcontent.consolidated.labels.model.Metadata> metadata) {
+	public CopyLabelSignal(java.lang.Integer copyId,
+			java.lang.Integer sequence, java.lang.Integer labelSetId,
+			java.lang.Integer status, boolean doNotPrint,
+			java.lang.String isbn, java.lang.String createdByUserId,
+			java.lang.String createDate, java.lang.String updatedByUserId,
+			java.lang.String updateDate, java.lang.Integer itemId) {
 		this.copyId = copyId;
 		this.sequence = sequence;
 		this.labelSetId = labelSetId;
@@ -147,8 +128,7 @@ public class CopyLabelSignal implements java.io.Serializable {
 		this.createDate = createDate;
 		this.updatedByUserId = updatedByUserId;
 		this.updateDate = updateDate;
-		this.lines = lines;
-		this.metadata = metadata;
+		this.itemId = itemId;
 	}
 
 }
