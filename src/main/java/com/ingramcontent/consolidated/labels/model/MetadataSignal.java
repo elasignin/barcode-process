@@ -6,12 +6,23 @@ package com.ingramcontent.consolidated.labels.model;
 
 public class MetadataSignal implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public MetadataSignal() {
-    }
+	private java.lang.String barcode;
 
+	public MetadataSignal() {
+	}
 
+	public java.lang.String getBarcode() {
+		return this.barcode;
+	}
 
+	public void setBarcode(java.lang.String barcode) {
+		this.barcode = barcode;
+	}
+
+	public MetadataSignal(java.lang.String barcode) {
+		this.barcode = barcode;
+	}
 
 }
