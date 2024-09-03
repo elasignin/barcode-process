@@ -12,7 +12,7 @@ public class Item implements java.io.Serializable {
 
 	private java.lang.Integer itemId;
 
-	private java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels;
+	private java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> copyLabels;
 
 	public Item() {
 	}
@@ -33,19 +33,19 @@ public class Item implements java.io.Serializable {
 		this.itemId = itemId;
 	}
 
-	public java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> getCopyLabels() {
+	public java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> getCopyLabels() {
 		return this.copyLabels;
 	}
 
 	public void setCopyLabels(
-			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> copyLabels) {
 		this.copyLabels = copyLabels;
 	}
 
 	public Item(
 			java.lang.String statusID,
 			java.lang.Integer itemId,
-			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> copyLabels) {
 		this.statusID = statusID;
 		this.itemId = itemId;
 		this.copyLabels = copyLabels;
