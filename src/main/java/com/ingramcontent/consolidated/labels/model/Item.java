@@ -8,21 +8,13 @@ public class Item implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String statusID;
+	private Integer statusID;
 
 	private java.lang.Integer itemId;
 
 	private java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> copyLabels;
 
 	public Item() {
-	}
-
-	public java.lang.String getStatusID() {
-		return this.statusID;
-	}
-
-	public void setStatusID(java.lang.String statusID) {
-		this.statusID = statusID;
 	}
 
 	public java.lang.Integer getItemId() {
@@ -42,8 +34,16 @@ public class Item implements java.io.Serializable {
 		this.copyLabels = copyLabels;
 	}
 
+	public java.lang.Integer getStatusID() {
+		return this.statusID;
+	}
+
+	public void setStatusID(java.lang.Integer statusID) {
+		this.statusID = statusID;
+	}
+
 	public Item(
-			java.lang.String statusID,
+			java.lang.Integer statusID,
 			java.lang.Integer itemId,
 			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabelSignal> copyLabels) {
 		this.statusID = statusID;
