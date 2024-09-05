@@ -12,6 +12,6 @@ public class ToteInformationHelper implements java.io.Serializable {
     }
 
 
-
+    
 
 }
