@@ -1,2 +1,16 @@
 package com.ingramcontent.consolidated.labels;
 
+rule "Check brocode length is equal to 10"
+    ruleflow-group 'checkBarcodeLength'
+	when 
+		toteInformation: ToteInformation(
+		barcodeRules != null && 
+		barcodeRules.isUsesCustomerSuppliedBarcode() &&
+		barcodeRules.getLength() == 10
+		);
+		itemStatus : ItemStatus();
+	then
+	    System.out.println("******** TEN ***********");
+		itemStatus.setSuccess(true);
+		itemStatus.setMessageCode("BARCODE_LENGTH_IS_MATCHED");;
+	end	
