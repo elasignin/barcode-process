@@ -1,7 +1,7 @@
 package com.ingramcontent.consolidated.labels;
 
 import com.ingramcontent.consolidated.labels.model.BarcodeActionSignal;
-
+import com.ingramcontent.consolidated.labels.helper.ToteInformationHelper;
 
 rule "Check brocode length is equal to 10"
     ruleflow-group 'checkBarcodeLength'
