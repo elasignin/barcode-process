@@ -1,6 +1,7 @@
 package com.ingramcontent.consolidated.labels;
 
 
+
 rule "Check brocode length is equal to 10"
     ruleflow-group 'checkBarcodeLength'
 	when 
