@@ -8,5 +8,5 @@ rule "Check barcode "
 	when  
 	   barcodeActionSignal: BarcodeActionSignal()
 	then
-
+       ToteInformationHelper.barcodeActionRule(barcodeActionSignal);
 	end	
