@@ -21,7 +21,7 @@ public class ToteInformation implements java.io.Serializable {
 	private java.lang.String createDate;
 	private java.lang.String updatedByUserId;
 	private java.lang.String updateDate;
-	private com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels;
+	private java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels;
 
 	public ToteInformation() {
 	}
@@ -131,12 +131,12 @@ public class ToteInformation implements java.io.Serializable {
 		this.updateDate = updateDate;
 	}
 
-	public com.ingramcontent.consolidated.labels.model.CopyLabel getCopyLabels() {
+	public java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> getCopyLabels() {
 		return this.copyLabels;
 	}
 
 	public void setCopyLabels(
-			com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels) {
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
 		this.copyLabels = copyLabels;
 	}
 
@@ -150,9 +150,11 @@ public class ToteInformation implements java.io.Serializable {
 			int copyCount,
 			int status,
 			com.ingramcontent.consolidated.labels.model.BarcodeRules barcodeRules,
-			java.lang.String createdByUserId, java.lang.String createDate,
-			java.lang.String updatedByUserId, java.lang.String updateDate,
-			com.ingramcontent.consolidated.labels.model.CopyLabel copyLabels) {
+			java.lang.String createdByUserId,
+			java.lang.String createDate,
+			java.lang.String updatedByUserId,
+			java.lang.String updateDate,
+			java.util.List<com.ingramcontent.consolidated.labels.model.CopyLabel> copyLabels) {
 		this.oeNumber = oeNumber;
 		this.plRunNumber = plRunNumber;
 		this.shipTo = shipTo;
