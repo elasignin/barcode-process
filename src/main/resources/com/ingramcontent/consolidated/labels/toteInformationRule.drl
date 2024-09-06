@@ -3,7 +3,7 @@ package com.ingramcontent.consolidated.labels;
 import com.ingramcontent.consolidated.labels.model.BarcodeActionSignal;
 import com.ingramcontent.consolidated.labels.helper.ToteInformationHelper;
 
-rule "Check barcode "
+rule "Update tote, Item and Copy levels status"
     ruleflow-group 'checkBarcodeLength'
 	when  
 	   barcodeActionSignal: BarcodeActionSignal()
