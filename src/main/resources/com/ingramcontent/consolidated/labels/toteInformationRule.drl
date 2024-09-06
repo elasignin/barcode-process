@@ -4,7 +4,7 @@ import com.ingramcontent.consolidated.labels.model.BarcodeActionSignal;
 import com.ingramcontent.consolidated.labels.helper.ToteInformationHelper;
 
 rule "Update tote, Item and Copy levels status"
-    ruleflow-group 'updateToteStatus'
+    ruleflow-group 'updateToteLevelStatus'
 	when  
 	   barcodeActionSignal: BarcodeActionSignal()
 	then
