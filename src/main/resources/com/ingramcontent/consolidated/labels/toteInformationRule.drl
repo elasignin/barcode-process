@@ -1,5 +1,6 @@
 package com.ingramcontent.consolidated.labels;
 
+import com.ingramcontent.consolidated.labels.model.BarcodeActionSignal;
 
 
 rule "Check brocode length is equal to 10"
