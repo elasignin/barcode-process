@@ -5,7 +5,8 @@ import com.ingramcontent.consolidated.labels.model.BarcodeActionSignal;
 
 rule "Check brocode length is equal to 10"
     ruleflow-group 'checkBarcodeLength'
-	when 
+	when  
+	   barcodeActionSignal: BarcodeActionSignal()
 	then
 
 	end	
