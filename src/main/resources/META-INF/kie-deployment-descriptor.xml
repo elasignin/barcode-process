@@ -12,7 +12,7 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("test", "test")</identifier>
+            <identifier>new com.ingramcontent.consolidated.labels.handler.RESTWorkItemHandler("test", "test")</identifier>
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
