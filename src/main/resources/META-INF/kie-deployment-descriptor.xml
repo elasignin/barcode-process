@@ -16,6 +16,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier></identifier>
+            <parameters/>
+            <name></name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
