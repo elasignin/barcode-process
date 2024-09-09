@@ -58,8 +58,8 @@ public class ContextUtility implements java.io.Serializable {
     	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
     	
     	switch (key) {
-			case Constant.PRODUCER_URL:
-				setProcessVariable(context, Constant.PRODUCER_URL, value);
+			case "libraryServicesKafkaMessageUrl":
+				setProcessVariable(context, "libraryServicesKafkaMessageUrl", value);
 			break;
 		}
     	
