@@ -18,13 +18,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier></identifier>
-            <parameters/>
-            <name></name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.executesql.ExecuteSqlWorkItemHandler("java:jboss/datasources/jbpmaudit")</identifier>
+            <identifier>new com.ingramcontent.consolidated.labels.handler.ExecuteSqlWorkItemHandler("java:jboss/datasources/jbpmaudit")</identifier>
             <parameters/>
             <name>ExecuteSQL</name>
         </work-item-handler>
