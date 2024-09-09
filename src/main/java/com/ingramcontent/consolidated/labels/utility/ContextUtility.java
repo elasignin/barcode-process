@@ -31,5 +31,20 @@ public class ContextUtility implements java.io.Serializable {
 	public static long getInstanceId(ProcessContext context) {
 		return context.getProcessInstance().getId();
 	}
+	
+	public static void initializeMetadata(ProcessContext context, JSONArray jsonArray)   {
+		
+		if (jsonArray == null || jsonArray.size() == 0) {
+			return;
+		}
+		
+	    Iterator<JSONObject> i = jsonArray.iterator();
+ 
+	    // take each value from the json array separately
+	    while (i.hasNext()) {
+	        JSONObject jsonObject = i.next();
+	        updateVariable(context, jsonObject);
+	    }
+	}
 
 }
