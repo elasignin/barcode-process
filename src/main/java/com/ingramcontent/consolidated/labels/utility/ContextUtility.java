@@ -54,8 +54,8 @@ public class ContextUtility implements java.io.Serializable {
     		return;
     	}
     	
-    	String key = (String)jsonObject.get(Constant.PARAMETER_NAME);
-    	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
+    	String key = (String)jsonObject.get("parameterName");
+    	String value = (String)jsonObject.get("parameterValue");
     	
     	switch (key) {
 			case "libraryServicesKafkaMessageUrl":
