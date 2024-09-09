@@ -46,5 +46,23 @@ public class ContextUtility implements java.io.Serializable {
 	        updateVariable(context, jsonObject);
 	    }
 	}
+	
+	private static void updateVariable(ProcessContext context, 
+                                       JSONObject jsonObject)  {
+    	
+    	if(jsonObject == null) {
+    		return;
+    	}
+    	
+    	String key = (String)jsonObject.get(Constant.PARAMETER_NAME);
+    	String value = (String)jsonObject.get(Constant.PARAMETER_VALUE);
+    	
+    	switch (key) {
+			case Constant.PRODUCER_URL:
+				setProcessVariable(context, Constant.PRODUCER_URL, value);
+			break;
+		}
+    	
+    }
 
 }
